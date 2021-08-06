@@ -26,9 +26,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run Nigiri
         uses: vulpemventures/nigiri-github-action@v1
-        with:
-          version: "v0.2.1"
-          repository_url: "https://github.com/tiero/nigiri"
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
