@@ -42,7 +42,7 @@ async function run() {
     await io.mkdirP(dataDir);
 
     core.info(`Check Nigiri version...`);
-    await exec.exec(filePath, ["--version"]);
+    await exec.exec(filePath, ["version"]);
 
     core.info(`Setting ~/.nigiri permissions...`);
     await exec.exec("chmod", ["-R", "777", dataDir]);
