@@ -31,4 +31,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           sleep 5
+          docker logs bitcoin
           docker ps -a
