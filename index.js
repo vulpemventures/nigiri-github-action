@@ -34,7 +34,7 @@ async function run() {
     const filePath = path.join(cachedPath, name);
 
     core.info(`Setting binary permissions...`);
-    await exec.exec("chmod", ["a+rwx", filePath]);
+    await exec.exec("chmod", ["+rwx", filePath]);
 
     const dataDir = "/home/runner/.nigiri";
 
@@ -46,6 +46,8 @@ async function run() {
 
     core.info(`Setting ~/.nigiri permissions...`);
     await exec.exec("chmod", ["-R", "777", dataDir]);
+
+    await exec.exec("ls", ["-la", dataDir]);
 
     core.info(`Running Nigiri...`);
     await exec.exec(filePath, ["start", "--liquid", "--ci"]);
