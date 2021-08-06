@@ -25,11 +25,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run Nigiri
-        uses: vulpemventures/nigiri-github-action@master
+        uses: vulpemventures/nigiri-github-action@v1
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sleep 5
-          docker logs bitcoin
+          sleep 3
           docker ps -a
