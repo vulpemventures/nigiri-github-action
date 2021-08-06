@@ -1,21 +1,22 @@
-# Hello world javascript action
+# Nigiri Bitcoin action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+Run Nigiri Bitcoin in your Github Action
 
 ## Inputs
 
-## `who-to-greet`
+## `version`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Optional** The Nigiri version tag. Default `"v0.2.0"`.
 
-## Outputs
+## `repository_url`
 
-## `time`
+**Optional** The Github repository URL that contains the binary artifact. Default `"https://github.com/vulpemventures/nigiri"`.
 
-The time we greeted you.
 
 ## Example usage
 
-uses: actions/hello-world-javascript-action@v1.1
-with:
-  who-to-greet: 'Mona the Octocat'
+```yml
+  name: Run Nigiri
+  uses: vulpemventures/nigiri-github-action@v1
+```
+

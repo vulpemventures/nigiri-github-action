@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@actions/core@^1.4.0":
+"@actions/core@^1.2.6", "@actions/core@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.4.0.tgz#cf2e6ee317e314b03886adfeb20e448d50d6e524"
   integrity sha512-CGx2ilGq5i7zSLgiiGUtBCxhRRxibJYU6Fim0Q1Wg2aQL2LTnF27zbqZOrxfvFQ55eSBW0L8uVStgtKMpa0Qlg==
 
-"@actions/exec@^1.1.0":
+"@actions/exec@^1.0.0", "@actions/exec@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@actions/exec/-/exec-1.1.0.tgz#53441d968e56d2fec69ad3f15773d4d94e01162c"
   integrity sha512-LImpN9AY0J1R1mEYJjVJfSZWU4zYOlEcwSTgPve1rFQqK5AwrEs6uWW5Rv70gbDIQIAUwI86z6B+9mPK4w9Sbg==
@@ -24,17 +24,29 @@
     "@octokit/plugin-paginate-rest" "^2.13.3"
     "@octokit/plugin-rest-endpoint-methods" "^5.1.1"
 
-"@actions/http-client@^1.0.11":
+"@actions/http-client@^1.0.11", "@actions/http-client@^1.0.8":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@actions/http-client/-/http-client-1.0.11.tgz#c58b12e9aa8b159ee39e7dd6cbd0e91d905633c0"
   integrity sha512-VRYHGQV1rqnROJqdMvGUbY/Kn8vriQe/F9HR2AlYHzmKuM/p3kjNuXhmdBfcVgsvRWTz5C5XW5xvndZrVBuAYg==
   dependencies:
     tunnel "0.0.6"
 
-"@actions/io@^1.0.1":
+"@actions/io@^1.0.1", "@actions/io@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@actions/io/-/io-1.1.1.tgz#4a157406309e212ab27ed3ae30e8c1d641686a66"
   integrity sha512-Qi4JoKXjmE0O67wAOH6y0n26QXhMKMFo7GD/4IXNVcrtLjUlGjGuVys6pQgwF3ArfGTQu0XpqaNr0YhED2RaRA==
+
+"@actions/tool-cache@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@actions/tool-cache/-/tool-cache-1.7.1.tgz#f9f4f822cb639da6facdf3e22ea571361ab26f92"
+  integrity sha512-y1xxxOhXaBUIUit3lhepmu/0xdgiTMpnZRLmVdtF0hTm521doi+MdRRRP62czHvM7wxH6epj4JPNJQ3iJpOrkQ==
+  dependencies:
+    "@actions/core" "^1.2.6"
+    "@actions/exec" "^1.0.0"
+    "@actions/http-client" "^1.0.8"
+    "@actions/io" "^1.1.1"
+    semver "^6.1.0"
+    uuid "^3.3.2"
 
 "@octokit/auth-token@^2.4.4":
   version "2.4.5"
@@ -149,6 +161,11 @@ once@^1.4.0:
   dependencies:
     wrappy "1"
 
+semver@^6.1.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
+  integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+
 tunnel@0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
@@ -158,6 +175,11 @@ universal-user-agent@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/universal-user-agent/-/universal-user-agent-6.0.0.tgz#3381f8503b251c0d9cd21bc1de939ec9df5480ee"
   integrity sha512-isyNax3wXoKaulPDZWHQqbmIx1k2tb9fb3GGDBRxCscfYV2Ch7WxPArBsFEG8s/safwXTT7H4QGhaIkTp9447w==
+
+uuid@^3.3.2:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
+  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
 wrappy@1:
   version "1.0.2"
