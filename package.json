@@ -1,0 +1,13 @@
+{
+  "name": "nigiri-github-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vulpemventures/nigiri-github-action.git",
+  "author": "Marco Argentieri <3596602+tiero@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/exec": "^1.1.0",
+    "@actions/github": "^5.0.0"
+  }
+}

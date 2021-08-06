@@ -1,0 +1,15 @@
+name: "Nigiri Bitcoin"
+description: "Run Nigiri Bitcoin in your Github Action"
+inputs:
+  version:
+    description: "nigiri version to install"
+    required: false
+    default: "v0.2.0"
+  repository_url:
+    description: "Github repository URL of the repository with release artifacts"
+    required: false
+    default: "https://github.com/vulpemventures/nigiri"
+outputs: {}
+runs:
+  using: "node12"
+  main: "index.js"
