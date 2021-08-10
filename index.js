@@ -17,9 +17,9 @@ async function run() {
     core.info(`Repository URL        ${repository}`);
 
     const name = "nigiri";
-    const downloadURL = version ?
-      `${repository}/releases/download/${version}/nigiri-linux-amd64` :
-      `${repository}/releases/latest/download/nigiri-linux-amd64`;
+    const downloadURL = !version || version === "latest" ?
+      `${repository}/releases/latest/download/nigiri-linux-amd64` :
+      `${repository}/releases/download/${version}/nigiri-linux-amd64`;
 
     let cachedPath = tc.find(name, version)
     if (!cachedPath) {
