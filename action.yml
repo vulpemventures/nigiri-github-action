@@ -4,7 +4,6 @@ inputs:
   version:
     description: "nigiri version to install"
     required: false
-    default: "v0.2.0"
   repository_url:
     description: "Github repository URL of the repository with release artifacts"
     required: false

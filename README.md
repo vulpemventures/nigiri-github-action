@@ -6,7 +6,7 @@ Run Nigiri Bitcoin in your Github Action
 
 ## `version`
 
-**Optional** The Nigiri version tag. Default `"v0.2.0"`.
+**Optional** The Nigiri version tag. Default to latest.
 
 ## `repository_url`
 
