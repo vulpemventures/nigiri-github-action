@@ -9,6 +9,10 @@ inputs:
     description: "Github repository URL of the repository with release artifacts"
     required: false
     default: "https://github.com/vulpemventures/nigiri"
+  use_liquid:
+    description: "use --liquid flag"
+    required: false
+    default: "true"
 outputs: {}
 runs:
   using: "node12"
