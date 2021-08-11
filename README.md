@@ -12,7 +12,7 @@ Run Nigiri Bitcoin in your Github Action
 
 **Optional** The Github repository URL that contains the binary artifact. Default `"https://github.com/vulpemventures/nigiri"`.
 
-## `repository_url`
+## `use_liquid`
 
 **Optional** Use --liquid flag. Default `true`.
 
