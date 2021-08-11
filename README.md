@@ -30,6 +30,6 @@ Run Nigiri Bitcoin in your Github Action
   name: Run Nigiri
   uses: vulpemventures/nigiri-github-action@v1
   with:
-    use_liquid: "false"
+    use_liquid: false
 ```
 
