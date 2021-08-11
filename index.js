@@ -10,6 +10,7 @@ async function run() {
 
   try {
     let version = core.getInput('version');
+    let useLiquid = core.getInput('use_liquid');
     let repository = core.getInput('repository_url');
 
 
@@ -50,7 +51,11 @@ async function run() {
     await exec.exec("chmod", ["-R", "777", dataDir]);
 
     core.info(`Running Nigiri...`);
-    await exec.exec(filePath, ["start", "--liquid", "--ci"]);
+    let args = ["start", "--liquid", "--ci"];
+    if (useLiquid !== "true") {
+      args = ["start", "--ci"];
+    }
+    await exec.exec(filePath, args);
 
   } catch (error) {
     core.setFailed(error.message);
