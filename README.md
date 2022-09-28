@@ -16,6 +16,9 @@ Run Nigiri Bitcoin in your Github Action
 
 **Optional** Use --liquid flag. Default `true`.
 
+## `use_ln`
+
+**Optional** Use --ln flag. Default `false`.
 
 ## Usage
 

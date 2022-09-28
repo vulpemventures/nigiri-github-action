@@ -13,6 +13,10 @@ inputs:
     description: "use --liquid flag"
     required: false
     default: "true"
+  use_ln:
+    description: "use --ln flag"
+    required: false
+    default: "false"
 outputs: {}
 runs:
   using: "node12"
