@@ -11,6 +11,7 @@ async function run() {
   try {
     let version = core.getInput('version');
     let useLiquid = core.getInput('use_liquid');
+    let useLn = core.getInput('use_ln');
     let repository = core.getInput('repository_url');
 
 
@@ -51,9 +52,12 @@ async function run() {
     await exec.exec("chmod", ["-R", "777", dataDir]);
 
     core.info(`Running Nigiri...`);
-    let args = ["start", "--liquid", "--ci"];
-    if (useLiquid !== "true") {
-      args = ["start", "--ci"];
+    let args = ["start", "--ci"];
+    if (useLiquid === "true") {
+      args.push("--liquid");
+    }
+    if (useLn === "true") {
+      args.push("--ln");
     }
     await exec.exec(filePath, args);
 
