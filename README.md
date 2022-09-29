@@ -27,12 +27,13 @@ Run Nigiri Bitcoin in your Github Action
   uses: vulpemventures/nigiri-github-action@v1
 ```
 
-### start Bitcoin-only services
+### start Bitcoin-only services with LN
 
 ```yml
   name: Run Nigiri
   uses: vulpemventures/nigiri-github-action@v1
   with:
     use_liquid: false
+    use_ln: true
 ```
 
