@@ -20,6 +20,10 @@ Run Nigiri Bitcoin in your Github Action
 
 **Optional** Use --ln flag. Default `false`.
 
+## `use_ark`
+
+**Optional** Use --ark flag. Default `false`.
+
 ## Usage
 
 ```yml
@@ -35,5 +39,14 @@ Run Nigiri Bitcoin in your Github Action
   with:
     use_liquid: false
     use_ln: true
+```
+
+### start with ARK network
+
+```yml
+  name: Run Nigiri
+  uses: vulpemventures/nigiri-github-action@v1
+  with:
+    use_ark: true
 ```
 

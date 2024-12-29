@@ -12,6 +12,7 @@ async function run() {
     let version = core.getInput('version');
     let useLiquid = core.getInput('use_liquid');
     let useLn = core.getInput('use_ln');
+    let useArk = core.getInput('use_ark');
     let repository = core.getInput('repository_url');
 
 
@@ -58,6 +59,9 @@ async function run() {
     }
     if (useLn === "true") {
       args.push("--ln");
+    }
+    if (useArk === "true") {
+      args.push("--ark");
     }
     await exec.exec(filePath, args);
 

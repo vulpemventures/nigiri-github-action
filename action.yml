@@ -17,6 +17,10 @@ inputs:
     description: "use --ln flag"
     required: false
     default: "false"
+  use_ark:
+    description: "use --ark flag"
+    required: false
+    default: "false"
 outputs: {}
 runs:
   using: "node12"
